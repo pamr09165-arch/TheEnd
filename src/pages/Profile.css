@@ -1,0 +1,133 @@
+/* ProfilePage.css */
+.profile-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Inter', 'Kanit', sans-serif;
+    color: #333;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.btn-back {
+    background: #f3f4f6;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #4b5563;
+}
+
+.btn-back:hover {
+    background: #e5e7eb;
+    transform: translateX(-3px);
+}
+
+.section-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.booking-item {
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+.booking-item:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+.booking-summary {
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #fff;
+}
+
+.booking-info-main .name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+
+.booking-info-main .date-time {
+    color: #6b7280;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.arrow-icon {
+    color: #9ca3af;
+    transition: transform 0.3s ease;
+}
+
+.arrow-icon.active {
+    transform: rotate(180deg);
+    color: #3b82f6;
+}
+
+.booking-details {
+    padding: 1.25rem;
+    background: #f9fafb;
+    border-top: 1px solid #f0f0f0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.detail-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 0.2rem;
+}
+
+.detail-group span {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.status-pending { background: #fef3c7; color: #92400e; }
+.status-confirmed { background: #dcfce7; color: #166534; }
+.status-cancelled { background: #fee2e2; color: #991b1b; }
+.status-completed { background: #e0f2fe; color: #075985; }
+
+.items-list {
+    margin-top: 1rem;
+    grid-column: 1 / -1;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #edf2f7;
+}
+
+.items-list ul {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.2rem;
+    color: #4b5563;
+}
