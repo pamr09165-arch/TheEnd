@@ -436,9 +436,9 @@ export default function App() {
         </button>
         <div className="header-badge">
           <span style={{ fontSize: "2rem" }}>🍽️</span>
-          <h1 className="header-title">อาหารญี่ปุ่น</h1>
+          <h1 className="header-title">อาหารไทย</h1>
         </div>
-          <p className="header-subtitle">เลือกเมนูและจองโต๊ะได้ง่ายๆ</p>
+          <p className="header-subtitle">เลือกเมนูได้ง่ายๆ</p>
           {isAuthenticated && user && (
             <div style={{ 
               marginTop: '1rem', 
